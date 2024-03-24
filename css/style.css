@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'Quicksand', sans-serif;
 }
 header {
   background-color: #373738;
@@ -46,4 +47,52 @@ footer ul {
 footer li {
   display: inline-block;
   padding: 0px 7px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+}
+.flexItem {
+  padding: 10px;
+  margin: 15px;
+  width: 33%;
+  text-align: center;
+  background-color: #A3B19F;
+}
+.workGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 40% 5% 40%;
+  grid-template-areas:
+  'img1 X img2'
+  'det1 X det2';
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.work-img1 {
+  grid-area: img1;
+}
+.work-img2 {
+  grid-area: img2;
+}
+.work-det1 {
+  grid-area: det1;
+}
+.work-det2 {
+  grid-area: det2;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600){
+  
 }
